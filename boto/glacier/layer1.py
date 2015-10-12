@@ -78,17 +78,18 @@ class Layer1(AWSAuthConnection):
                  provider='aws', security_token=None,
                  suppress_consec_slashes=True,
                  region=None, region_name='us-east-1',
-                 profile_name=None):
+                 profile_name=None, host=None):
 
-        if not region:
+        if not region and not host:
             for reg in boto.glacier.regions():
                 if reg.name == region_name:
                     region = reg
+                    host = region.endpoint
                     break
 
         self.region = region
         self.account_id = account_id
-        super(Layer1, self).__init__(region.endpoint,
+        super(Layer1, self).__init__(host,
                                      aws_access_key_id, aws_secret_access_key,
                                      is_secure, port, proxy, proxy_port,
                                      proxy_user, proxy_pass, debug,
