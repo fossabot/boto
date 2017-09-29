@@ -1,3 +1,5 @@
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Ftimuralp%2Fboto.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Ftimuralp%2Fboto?ref=badge_shield)
+
 ####
 boto
 ####
@@ -214,3 +216,7 @@ boto config file.  See `this`_ for details.
 .. _gitflow: http://nvie.com/posts/a-successful-git-branching-model/
 .. _neo: https://github.com/boto/boto/tree/neo
 .. _boto-users Google Group: https://groups.google.com/forum/?fromgroups#!forum/boto-users
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Ftimuralp%2Fboto.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Ftimuralp%2Fboto?ref=badge_large)
